@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="appenedToDisplay('/')">/</button>
+            <button onclick="appenedToDisplay('%')">%</button>
+            <button onclick="clearLast('%')">CE</button>
+
+            <button onclick="appenedToDisplay('7')">7</button>
+            <button onclick="appenedToDisplay('8')">8</button>
+            <button onclick="appenedToDisplay('*9')">9</button>
+
+            <button onclick="appenedToDisplay('*')">x</button>
+
+ 
+            <button onclick="appenedToDisplay('4')">4</button>
+            <button onclick="appenedToDisplay('5')">5</button>
+            <button onclick="appenedToDisplay('6')">6</button>
+            <button onclick="appenedToDisplay('-')">-</button>
+
+            <button onclick="appenedToDisplay('1')">1</button>
+            <button onclick="appenedToDisplay('2')">2</button>
+            <button onclick="appenedToDisplay('3')">3</button>
+            <button onclick="appenedToDisplay('+')">+</button>
+            <button onclick="appenedToDisplay('00')">00</button>
+            <button onclick="appenedToDisplay('0')">0</button>
+            <button onclick="appenedToDisplay('.')">.</button>
+            <button id="equals" onclick="calculator()">=</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
